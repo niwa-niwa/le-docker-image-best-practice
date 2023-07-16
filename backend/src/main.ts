@@ -12,8 +12,8 @@ console.log('Backend Start ', process.env.MESSAGE);
 
 const STATIC_PATH =
   process.env.NODE_ENV === 'production'
-    ? join(process.cwd(), '..', 'frontend', 'dist')
-    : join(process.cwd(), '..', 'frontend');
+    ? join(__dirname, '..',"..", 'frontend', 'dist')
+    : join(__dirname, '..',"..", 'frontend');
 
 async function bootstrap() {
   const nestApp = await NestFactory.create(AppModule);
