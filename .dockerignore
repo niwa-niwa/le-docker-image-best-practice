@@ -1,3 +1,7 @@
+Dockerfile
+docker-compose.yml
+.git
+
 backend/.env
 backend/dist
 backend/node_modules

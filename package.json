@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "version":"node --version",
+    "start":"cd ./backend && node ./dist/main.js",
     "dev:backend":"npm run start:dev --prefix ./backend",
     "dev:frontend":"npm run dev --prefix ./frontend",
     "dv:all":"npm run dev:backend & npm run dev:frontend",
